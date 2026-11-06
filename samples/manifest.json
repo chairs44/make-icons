@@ -2,7 +2,7 @@
   "schema_version": 1,
   "icons": [
     {
-      "name": "book-swap",
+      "name": "backpack",
       "variant": "outline",
       "native_size": 24.0,
       "view_box": [
@@ -11,15 +11,17 @@
         24.0,
         24.0
       ],
-      "file": "svg/24/book-swap-outline.svg",
+      "file": "svg/24/backpack-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
+        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "optical_review": "inspected_in_light_and_dark_contexts",
+        "application_integration": "not_performed"
+      },
+      "limitations": "Scaled 24-unit master, not a compact optical variant."
     },
     {
-      "name": "checkmark",
+      "name": "book",
       "variant": "outline",
       "native_size": 24.0,
       "view_box": [
@@ -28,15 +30,17 @@
         24.0,
         24.0
       ],
-      "file": "svg/24/checkmark-outline.svg",
+      "file": "svg/24/book-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
+        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "optical_review": "inspected_in_light_and_dark_contexts",
+        "application_integration": "not_performed"
+      },
+      "limitations": "Scaled 24-unit master, not a compact optical variant."
     },
     {
-      "name": "download",
+      "name": "camera",
       "variant": "outline",
       "native_size": 24.0,
       "view_box": [
@@ -45,15 +49,17 @@
         24.0,
         24.0
       ],
-      "file": "svg/24/download-outline.svg",
+      "file": "svg/24/camera-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
+        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "optical_review": "inspected_in_light_and_dark_contexts",
+        "application_integration": "not_performed"
+      },
+      "limitations": "Scaled 24-unit master, not a compact optical variant."
     },
     {
-      "name": "face-id",
+      "name": "cassette",
       "variant": "outline",
       "native_size": 24.0,
       "view_box": [
@@ -62,15 +68,17 @@
         24.0,
         24.0
       ],
-      "file": "svg/24/face-id-outline.svg",
+      "file": "svg/24/cassette-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
+        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "optical_review": "inspected_in_light_and_dark_contexts",
+        "application_integration": "not_performed"
+      },
+      "limitations": "Scaled 24-unit master, not a compact optical variant. Reel details are least distinct at 16px."
     },
     {
-      "name": "fermentation",
+      "name": "coffee-cup",
       "variant": "outline",
       "native_size": 24.0,
       "view_box": [
@@ -79,15 +87,17 @@
         24.0,
         24.0
       ],
-      "file": "svg/24/fermentation-outline.svg",
+      "file": "svg/24/coffee-cup-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
+        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "optical_review": "inspected_in_light_and_dark_contexts",
+        "application_integration": "not_performed"
+      },
+      "limitations": "Scaled 24-unit master, not a compact optical variant."
     },
     {
-      "name": "field-recorder",
+      "name": "headphones",
       "variant": "outline",
       "native_size": 24.0,
       "view_box": [
@@ -96,15 +106,17 @@
         24.0,
         24.0
       ],
-      "file": "svg/24/field-recorder-outline.svg",
+      "file": "svg/24/headphones-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
+        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "optical_review": "inspected_in_light_and_dark_contexts",
+        "application_integration": "not_performed"
+      },
+      "limitations": "Scaled 24-unit master, not a compact optical variant."
     },
     {
-      "name": "kite",
+      "name": "home",
       "variant": "outline",
       "native_size": 24.0,
       "view_box": [
@@ -113,15 +125,17 @@
         24.0,
         24.0
       ],
-      "file": "svg/24/kite-outline.svg",
+      "file": "svg/24/home-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
+        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "optical_review": "inspected_in_light_and_dark_contexts",
+        "application_integration": "not_performed"
+      },
+      "limitations": "Scaled 24-unit master, not a compact optical variant."
     },
     {
-      "name": "microscope",
+      "name": "plant",
       "variant": "outline",
       "native_size": 24.0,
       "view_box": [
@@ -130,15 +144,17 @@
         24.0,
         24.0
       ],
-      "file": "svg/24/microscope-outline.svg",
+      "file": "svg/24/plant-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
+        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "optical_review": "inspected_in_light_and_dark_contexts",
+        "application_integration": "not_performed"
+      },
+      "limitations": "Scaled 24-unit master, not a compact optical variant."
     },
     {
-      "name": "mushroom",
+      "name": "scissors",
       "variant": "outline",
       "native_size": 24.0,
       "view_box": [
@@ -147,15 +163,17 @@
         24.0,
         24.0
       ],
-      "file": "svg/24/mushroom-outline.svg",
+      "file": "svg/24/scissors-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
+        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "optical_review": "inspected_in_light_and_dark_contexts",
+        "application_integration": "not_performed"
+      },
+      "limitations": "Scaled 24-unit master, not a compact optical variant."
     },
     {
-      "name": "night-train",
+      "name": "ticket",
       "variant": "outline",
       "native_size": 24.0,
       "view_box": [
@@ -164,114 +182,14 @@
         24.0,
         24.0
       ],
-      "file": "svg/24/night-train-outline.svg",
+      "file": "svg/24/ticket-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
-    },
-    {
-      "name": "orbital-dock",
-      "variant": "outline",
-      "native_size": 24.0,
-      "view_box": [
-        0.0,
-        0.0,
-        24.0,
-        24.0
-      ],
-      "file": "svg/24/orbital-dock-outline.svg",
-      "checks": {
-        "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
-    },
-    {
-      "name": "radio-telescope",
-      "variant": "outline",
-      "native_size": 24.0,
-      "view_box": [
-        0.0,
-        0.0,
-        24.0,
-        24.0
-      ],
-      "file": "svg/24/radio-telescope-outline.svg",
-      "checks": {
-        "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
-    },
-    {
-      "name": "seed-vault",
-      "variant": "outline",
-      "native_size": 24.0,
-      "view_box": [
-        0.0,
-        0.0,
-        24.0,
-        24.0
-      ],
-      "file": "svg/24/seed-vault-outline.svg",
-      "checks": {
-        "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
-    },
-    {
-      "name": "switchback",
-      "variant": "outline",
-      "native_size": 24.0,
-      "view_box": [
-        0.0,
-        0.0,
-        24.0,
-        24.0
-      ],
-      "file": "svg/24/switchback-outline.svg",
-      "checks": {
-        "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
-    },
-    {
-      "name": "tape-loop",
-      "variant": "outline",
-      "native_size": 24.0,
-      "view_box": [
-        0.0,
-        0.0,
-        24.0,
-        24.0
-      ],
-      "file": "svg/24/tape-loop-outline.svg",
-      "checks": {
-        "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
-    },
-    {
-      "name": "tidal-energy",
-      "variant": "outline",
-      "native_size": 24.0,
-      "view_box": [
-        0.0,
-        0.0,
-        24.0,
-        24.0
-      ],
-      "file": "svg/24/tidal-energy-outline.svg",
-      "checks": {
-        "xml_parsed": true,
-        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
-        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
-      }
+        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "optical_review": "inspected_in_light_and_dark_contexts",
+        "application_integration": "not_performed"
+      },
+      "limitations": "Scaled 24-unit master, not a compact optical variant."
     }
   ]
 }

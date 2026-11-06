@@ -16,17 +16,20 @@ Explicit user instructions and an established project's approved icon system ove
 ## Use the specification and references
 
 - Before creating a new family or resolving construction/export decisions, read [references/master-prompt.md](references/master-prompt.md). It is the complete, self-contained design and delivery contract. Its input block is a template for people using the prompt directly, not a mandatory intake form for skill users.
-- Select a few structurally relevant files from [references/anchors.md](references/anchors.md) and `assets/outline-24/`. Compare geometry as well as rendered appearance. The 28 examples cover controls, organic objects, technical symbols, and asymmetric forms; they are references, not an obligatory output inventory.
+- Read [references/construction.md](references/construction.md) before drawing: it defines proportion and corner roles, structural versus organic curves, attached parts, crossings, modifiers, painted-edge clearance, and reference comparison.
+- Read [references/anchors.md](references/anchors.md) before using bundled examples. The ten examples demonstrate structural, organic, and intersecting contours. Supplied references and current construction rules take precedence. Inspect their geometry and rendered behavior before adapting them; they are examples, not a mandatory inventory.
 - Read the compact-size and typography sections of the master prompt when working at 16/20 native units or with letters/numerals. Read its export section for framework components, expanded paths, or raster requests.
 - For a reusable prompt request, return the master prompt with **all editable inputs at the beginning**. It must work without this skill, bundled scripts, a specific design application, or private project context.
 
 ## Construct the family
 
-Use the same stroke weight and terminal policy across related symbols. Start broad container corners around 2 units, but preserve natural circles, organic Bézier contours, directional points, and smaller structural transitions. Measure visible bounds including stroke extents. Match apparent size, not identical bounding boxes. Keep openings legible and avoid heavy seams where parts meet.
+Use the same stroke weight and terminal policy across related symbols. Start broad container corners around 2 units, but preserve natural circles, organic Bézier contours, directional points, and smaller structural transitions. Measure visible bounds including stroke extents. Match apparent size, not identical bounding boxes. Measure openings between painted edges, not just centerlines. Plan which contour owns each shared edge; stop hidden contours at attachments. Round caps do not correct doubled lines or poor curve tangents.
+
+Favor long clean structural edges with short controlled corner transitions; preserve directional points and generous interiors. Distinguish continuous contours, attached details, occluded crossings, and detached modifiers. Organic forms use broad flowing curves with deliberate taper, not assemblies of rounded boxes. Carry these decisions across subjects without forcing one silhouette, orientation, or topology onto the whole family.
 
 Keep `currentColor`, transparent negative space, and scalable SVG geometry. Use path/shape data rather than a raster substitute. Treat an expanded outline and a visually solid variant as different things. Preserve reference identity; do not replace a distinctive supplied mark with a generic symbol without explaining what would be lost.
 
-Use real font outlines for fixed letters and numerals. Reserve label space before placing surrounding rings or arrowheads; center on the intended container, then review the complete symbol. Mirror directional geometry without mirroring text. The previous family's 2.25-unit time-control rings are not the new family's default.
+Use real font outlines for fixed letters and numerals. Reserve label space before placing surrounding rings or arrowheads; center on the intended container, then review the complete symbol. Mirror directional geometry without mirroring text. Use the family’s chosen weight for control rings; do not thicken them independently.
 
 A small request can go directly to finished icons. For a broad or uncertain family, establish a representative structural, directional, and organic subset internally, then complete the requested set. Stop for design approval only if the user requested that checkpoint or a material unresolved choice requires it.
 
@@ -48,7 +51,7 @@ Default sensibly when no export format is specified. Offer one concise format/si
 - [scripts/geometry.py](scripts/geometry.py): build-time circular polygon corners. Use only when exact circular corners fit the shape. It does not round arbitrary organic contours or decide optical balance.
 - [scripts/specimen.py](scripts/specimen.py): standard-library SVG parsing, recursive specimens, optional manifest generation, and ZIP assembly. Run `--help` for its interface. It does not generate artwork, convert strokes, produce framework components, or certify visual quality. Include only intended deliverables in archives.
 
-`assets/legacy-solid/` preserves eight earlier-family examples for explicit legacy matching. Do not use their weight/proportion defaults for new work. Original files under `assets/anchors/`, where present in an existing installation, are also legacy; the active reference bank is `assets/outline-24/`.
+`assets/outline-24/` contains the ten editable construction examples described in [references/anchors.md](references/anchors.md). These match the downloadable samples.
 
 ## Verify and finish
 

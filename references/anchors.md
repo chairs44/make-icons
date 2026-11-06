@@ -1,34 +1,25 @@
 # Drawing references
 
-## Current outline family
+`../assets/outline-24/` contains ten original editable SVG examples on a 24-unit grid with a 1.5-unit stroke. The same files are supplied in the sample pack. Use them with [construction.md](construction.md), not as a substitute for the requested subject or visual reference.
 
-`../assets/outline-24/` contains 28 original 24-unit drawings. They use a nominal 1.5-unit stroke and were reviewed as a family in two Paper studies. The style direction was accepted; this is not a certification of every possible size, export, or future adaptation. Do not bundle this whole bank when a user requests only a few icons.
+| Construction decision | Examples |
+| --- | --- |
+| Continuous body, short corner transitions, inset opening | `home-outline.svg` |
+| Wide container and a centered identifying detail | `camera-outline.svg` |
+| Curved arch with connected parts and shared-edge ownership | `headphones-outline.svg` |
+| Tapered organic contours and intentional asymmetry | `plant-outline.svg` |
+| Concave cutouts and separated internal marks | `ticket-outline.svg` |
+| Narrow upright mass and a single page-block boundary | `book-outline.svg` |
+| Curved body and attached handle | `coffee-cup-outline.svg` |
+| Matched loops and an interrupted rear member | `scissors-outline.svg` |
+| Curved shoulders and a restrained inset detail | `backpack-outline.svg` |
+| Nested contours and compact identifying details | `cassette-outline.svg` |
 
-| Structure to study | Relevant files in `assets/outline-24/` |
-|---|---|
-| Container and subject proportions | `home-outline.svg`, `book-outline.svg`, `email-outline.svg`, `image-outline.svg` |
-| Simple circles and directional lines | `search-outline.svg`, `arrow-right-outline.svg`, `external-link-outline.svg`, `plus-circle-outline.svg`, `check-circle-outline.svg`, `sun-outline.svg` |
-| Media controls and numeral spacing | `play-outline.svg`, `pause-outline.svg`, `back-15-outline.svg`, `forward-30-outline.svg` |
-| Curves and nested outlines | `headphones-outline.svg`, `microphone-outline.svg`, `podcast-outline.svg`, `focus-head-outline.svg` |
-| Organic and asymmetric contours | `plant-outline.svg`, `palette-outline.svg`, `plane-outline.svg` |
-| Object construction and connected parts | `flask-outline.svg`, `cart-outline.svg`, `shield-outline.svg`, `dumbbell-outline.svg`, `noodles-outline.svg`, `chip-outline.svg`, `scissors-outline.svg` |
+Inspect actual SVG coordinates, then compare at the intended display sizes. Match apparent weight and subject proportions rather than copying one bounding box. Draw only the requested inventory. Do not treat these examples as fixed templates for all subjects or claim user approval for future adaptations.
 
-Read the actual SVGs for coordinates. Use the supplied drawing directly when it matches the requested symbol, or adapt its structural decisions to a new symbol. Do not copy a reference's bounding box onto an unrelated shape. Return only the requested assets.
+The examples are scalable 24-unit masters. Their 16/20px previews are resized displays, not independent optical drawings. Cassette reel details and narrow handle openings need particular care at 16px. Review a compact native master separately when the target requires dense small UI.
 
-The back-15 and forward-30 numeral contours were retained from earlier font-based anchors; their rings and arrowheads were redrawn for this family. The glyphs are fixed path data, not a bundled font or a mechanism for generating arbitrary labels. For other labels, use an available suitable font and record its source in working notes. Podcast and numbered controls have dense detail at 16px; use native compact-size review before promising legibility at that size.
-
-The focus-head drawing is a conceptual head with a focus marker. It is not a faithful reproduction of a specific brand or of the headset-equipped reference. An explicitly supplied reference always needs its own identity check.
-
-The reference bank contains editable original drawings. External asset collections, screenshots, and private application code are not included.
-
-## Previous solid family
-
-`../assets/legacy-solid/` preserves these eight earlier assets byte-for-byte:
-
-- Home, play, pause: solid and outline versions.
-- Back 15 and forward 30: solid-family controls with the earlier heavier ring treatment.
-
-Use these only to maintain or explicitly match an existing legacy set. They do not define the new 1.5-unit outline family. Keep their original geometry when the user's task is preservation rather than restyling.
+Files use currentColor and true transparent negative space. The decorative SVG defaults require accessible labels on meaningful images or their parent controls. No external icon collections, screenshots, application code, or font files are bundled.
 
 ## Specimen helper
 
