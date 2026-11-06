@@ -1,380 +1,175 @@
-# USER INPUT: COMPLETE THIS SECTION FIRST
+# YOUR INPUTS
 
-Replace the bracketed fields. All user-supplied information belongs here.
+Replace the fields you need. Leave optional fields blank to use their defaults. Existing instructions in this conversation also count as input.
 
-**REQUIRED**
-- Icons to create: [LIST ICON NAMES AND CLARIFY UNUSUAL MEANINGS]
+**Required**
+- **Icons or subjects:** [List the icons to create. Explain unusual meanings, or identify subjects in attached references.]
 
-**OPTIONAL: DEFAULTS APPLY IF LEFT UNCHANGED**
-- Variants: [solid / solid + outline; default: solid]
-- Component format: [none / Astro / React / other; default: none]
-- Interaction examples: [none / related states such as play ↔ pause; default: none]
-- Motion in interaction examples: [off / restrained; default: off]
-- Reference images: [attach images and identify their corresponding icons; default: none]
-- Existing approved icons: [attach SVG files; default: none]
-- Special constraints: [required symbols, sizes, directional behavior, output destination, or other constraints; default: none]
-
-Standalone SVG files and a self-contained HTML specimen are the default outputs. Components are additional when requested. Explicit user instructions may narrow these outputs.
-
-If the required inventory is missing, ask before drawing. Do not infer an inventory from a project. Reuse information already supplied in the conversation rather than asking again. Ask about optional fields only when ambiguity materially changes the result.
+**Optional**
+- **Use/context:** [For example: website navigation, audio player, dense desktop sidebar, mobile app, printed diagram.]
+- **References:** [Attach images/SVGs or provide accessible paths/URLs. Identify which reference belongs to which icon.]
+- **Existing family to match:** [Attach approved icons or describe the established system. Default: the drawing system below.]
+- **Visual variants:** [outline / solid / both. Default: outline.]
+- **Export formats:** [SVG / React / Vue / SolidJS / React Native / Astro / expanded SVG / PNG. Default: SVG. Multiple choices allowed. Write “help me choose” if useful.]
+- **Native drawing sizes:** [24 / compact 16 / compact 20 / a combination / custom. Default: 24.]
+- **Intended display sizes:** [Default review: 16, 20, 24, 32px, plus a 72px detail view.]
+- **Delivery scope and destination:** [Files, code in chat, Paper/canvas study, or a narrower scope such as “SVG only”; output folder if relevant. Default: the file package below when file tools are available.]
+- **Color/background:** [Default: currentColor and transparency. For PNG, specify foreground color, pixel sizes, and 1×/2× density; defaults if PNG is selected: black, 24px at 1×, transparent.]
+- **Letters/numerals:** [Exact labels and preferred typeface if relevant. Default: a suitable available, licensed sans-serif converted to vector outlines.]
+- **Interaction examples:** [State pairs or behavior to demonstrate. Default: none; no animation.]
+- **Other constraints:** [Naming, minimum sizes, accessibility context, RTL behavior, preserved geometry, or project-specific overrides.]
 
 ---
 
-# TASK AND DESIGN DIRECTION
+# TASK
 
-Create a cohesive set of editable SVG icons. Generate only the requested inventory and variants. Examples below demonstrate construction; they do not add to the inventory.
+Create the requested icons as a cohesive set of original, editable vectors. Complete the requested inventory and exports, not merely a plan. A single icon is a valid set. The example SVGs below are construction references, not additional requested icons.
 
-The default style is precise, compact, gently softened, and subtly unconventional. Think of purposeful markings on equipment: broad silhouettes, short extensions, controlled curves, and clear negative space. Consistency comes first. Personality comes from proportion and construction.
+Use information already supplied. If the subjects are missing or genuinely ambiguous, ask one focused question before drawing. Otherwise use defaults and proceed. If export selection materially depends on an unknown target, ask one concise bundled question with SVG as the default. Do not make users answer optional fields unnecessarily.
 
-- Mostly solid silhouettes, slightly squat bodies, short stems, shafts, and handles.
-- Straight sections connected by small deliberate curves.
-- Familiar meanings and immediate recognition.
-- Soft corners without inflated, bubbly, pillow-like, or cartoon forms.
-- Arrowheads and other directional points remain directional. Circles remain circular.
-- No decorative irregularity, texture, simulated depth, or unnecessary detail.
+Explicit instructions and an established approved family take precedence over defaults. Explain material departures briefly. Do not modify an application, install dependencies, publish assets, or expand the icon inventory unless that work is requested. Do not require any particular skill, paid icon library, design application, or private file for this prompt to work.
 
-Explicit project constraints override defaults. When an established icon family is supplied, preserve its actual construction rather than imposing incompatible tokens. State material departures. Never distort a functional symbol merely to make it unusual.
+# DRAWING CHARACTER
 
-# DIMENSIONS AND WEIGHT
+Precise, open, gently softened, and quietly distinctive. Keep the symbol immediately recognizable. Give each subject its natural proportions: a book may be tall, a cap wide, a globe circular, and a plant asymmetric. Family resemblance comes from consistent apparent weight, clean contour transitions, and controlled detail rather than making every silhouette identical.
 
-All values below are SVG units on a 24 × 24 grid.
+- Prefer open outlines and generous internal space. Use small filled details only where they clarify meaning, such as palette wells or a pen's hole.
+- Join straight sections and curves cleanly. Avoid accidental cusps, dark overlap seams, doubled edges, and tiny detached fragments.
+- Round container corners deliberately. Do not round every point equally: arrows still point, leaves still taper, and circles remain circular.
+- Use asymmetry when the subject needs it; remove accidental wobble and unnecessary perspective or texture.
+- Avoid inflated shapes, excessively squat bodies, uniformly stubby handles, decorative distress, simulated depth, gradients, shadows, and multicolored illustration.
+- Capture a supplied reference's identifying silhouette and relationships. Explain meaningful simplifications; do not silently substitute a generic symbol. Brand marks retain their identity rather than inheriting arbitrary UI rounding.
 
-| Property | Default specification |
+# GEOMETRY AND OPTICAL BALANCE
+
+These are defaults for the 24-unit family, not universal measurements imposed on all projects.
+
+| Property | Default |
 |---|---|
-| ViewBox | `0 0 24 24` |
-| Default display | `24 × 24px` |
-| Inspection sizes | `16, 20, 24, 32px` |
-| Standard visible bounds | `3–21` on both axes, including strokes |
-| Optical overshoot | Up to `0.5` beyond standard bounds |
-| Typical main body | `14–18` wide × `12–16` high |
-| Structural corner radius | `0.75` |
-| Broad rectangular-body radius | `1.25` where appropriate |
-| Solid narrow bar | `3` |
-| Solid primary bar | `3.5` |
-| Outline stroke | `1.75` |
-| Minimum intentional gap/cutout | `2` |
-| Preferred small-size gap | `2.5–3` |
-| Optical positioning correction | Up to `0.5` per axis before reconsidering geometry |
+| Native coordinate frame | `viewBox="0 0 24 24"` |
+| Default displayed dimensions | `width="24" height="24"` |
+| Outline stroke | `1.5` units, centered on the path |
+| Nominal visible live area | `2–22` on each axis, including stroke |
+| Broad rectangular corner radius | About `2` units on the centerline |
+| Smaller structural transitions | Usually `0.75–1.5` units where needed |
+| Exposed line ends and joins | Round; use a deliberate exception where the structure requires it |
+| Intentional open gaps | Aim for at least `2` units; prefer `2.5` in dense areas |
+| Optical placement | Start centered; small corrections around `0.5` units are normal |
+| Color | `currentColor`, full opacity, transparent negative space |
 
-These define a family, not identical bounding boxes. Match perceived size and weight through geometry. Use smaller footprints for uninterrupted disks and other dense forms. Keep outline stroke consistent across a family; if changing it, change the family deliberately.
+Use shape-specific keylines inside the frame. A narrow icon need not fill the live area's width; a dense disk may need a smaller footprint than an open ring. Modest overshoot is acceptable when it improves balance, provided the viewBox does not clip the painted geometry. If an icon needs large positional corrections, revisit its construction.
 
-A 1.75-unit stroke extends 0.875 on either side of its centerline. Measure visible bounds after stroke expansion. Use decimal coordinates when needed. Bake optical correction into the SVG, not page-specific margins.
+A 1.5-unit stroke extends 0.75 on either side of its centerline. For example, a vertical centerline at x=3.75 has a left painted edge at x=3. Use decimal coordinates intentionally; do not force every vertex onto an integer pixel. These assets scale, so one coordinate choice cannot guarantee perfect raster alignment at every display size.
 
-## Exact corners and nested contours
+Use arcs or rounded rectangles for exact circular corners and Béziers for deliberately organic contours. For genuinely parallel nested contours with inset t, the inner radius is max(0, outer radius − t). This formula does not apply to unrelated internal details. Keep weight consistent across related icons; do not quietly thicken individual symbols to compensate for unresolved proportions.
 
-Use SVG `A` arc commands or rounded rectangles for exact circular radii. Bézier curves are appropriate for organic contours but must not be described as exact circular arcs.
+Measure the SVG frame, ink bounds, and internal protected spaces separately. A correct bounding box is not proof of perceptual centering or exact contour clearance. Review the whole family at actual size beside regular text.
 
-For parallel nested rounded contours with uniform inset `t`:
+# NATIVE SIZE IS NOT DISPLAY SIZE
 
-```text
-inner radius = max(0, outer radius − t)
-```
+A 24-unit SVG displayed at 16px is still the same 24-unit drawing. Its 1.5-unit stroke renders at 1px. The standard specimen shows scaled samples; do not call those independently tuned 16px or 20px icons.
 
-Apply this only to genuinely parallel contours. Square inner corners can be correct when the inset exceeds the outer radius. Do not force unrelated interior details to share this formula.
+When compact native masters are requested, construct separate `0 0 16 16` and/or `0 0 20 20` drawings and review them at their native size. Start near proportional weights of 1.0 and 1.25 units respectively, then choose any optical adjustment consistently for that size family. Simplify details, reopen gaps, and rebalance alignment when needed. Do not manufacture optical variants by changing width/height alone or merely rescaling every coordinate.
 
-# COLOR AND SCALING
+Include only requested native sizes. State any practical minimum-size limitation, especially for numbered controls or complex reference marks. Do not claim every detailed icon is equally legible at 16px.
 
-Use `currentColor` only. Negative space stays transparent. No background-colored holes, gradients, textures, shadows, filters, or second colors. Static geometry uses full opacity. Scale strokes with the viewBox; do not use `vector-effect="non-scaling-stroke"`.
+# SVG CONSTRUCTION
 
-# HOW TO BUILD THEM
-
-## SVG shells
-
-Solid:
+Use standalone SVG with explicit viewBox and scalable geometry. Default shell:
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg"
-  width="24" height="24" viewBox="0 0 24 24"
-  fill="currentColor" aria-hidden="true" focusable="false">
-  <!-- Resolved geometry -->
-</svg>
-```
-
-Outline:
-
-```svg
-<svg xmlns="http://www.w3.org/2000/svg"
-  width="24" height="24" viewBox="0 0 24 24"
-  fill="none" stroke="currentColor" stroke-width="1.75"
-  stroke-linecap="round" stroke-linejoin="round"
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+  viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
   aria-hidden="true" focusable="false">
-  <!-- Resolved geometry -->
+  <circle cx="12" cy="12" r="9"/>
+  <path d="M8 12h8m-4-4v8"/>
 </svg>
 ```
 
-These are decorative shells. Meaningful standalone icons need an accessible name and no `aria-hidden`. Label icon-only buttons/links on the parent. Avoid duplicate title IDs when repeated.
+This is a complete decorative plus-circle example. For a meaningful standalone SVG, remove aria-hidden and supply an accessible name. Label icon-only controls on their parent button/link; avoid duplicate announcements and repeated hardcoded title IDs.
 
-## Construction tokens
-
-```ts
-export const iconTokens = {
-  viewBox: "0 0 24 24",
-  defaultSize: 24,
-  inspectionSizes: [16, 20, 24, 32],
-  bounds: { min: 3, max: 21, opticalOvershoot: 0.5 },
-  radius: { structural: 0.75, broadBody: 1.25 },
-  solid: { narrowBar: 3, primaryBar: 3.5 },
-  outline: { strokeWidth: 1.75, halfStroke: 0.875 },
-  gap: { minimum: 2, preferred: 2.5 },
-  opticalShiftLimit: 0.5,
-} as const;
-```
-
-Resolve tokens into standalone files. Use SVG kebab-case attributes or the component framework's appropriate syntax.
-
-## Solid construction and cutouts
-
-Draw softened silhouettes directly. Do not inflate filled shapes with an extra stroke. Use compound paths and `fill-rule="evenodd"` for transparent cutouts.
+A complete mixed-geometry example:
 
 ```svg
-<!-- Outer radius 1.25, inset 3, square interior corners. -->
-<path fill="currentColor" fill-rule="evenodd" d="
-  M4.25 5 H19.75 A1.25 1.25 0 0 1 21 6.25
-  V17.75 A1.25 1.25 0 0 1 19.75 19
-  H4.25 A1.25 1.25 0 0 1 3 17.75
-  V6.25 A1.25 1.25 0 0 1 4.25 5 Z
-  M6 8 H18 V16 H6 Z
-"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+  viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+  aria-hidden="true" focusable="false">
+  <path d="M4 15v-3.5a8 8 0 0 1 16 0V15"/>
+  <rect x="4" y="13" width="4" height="7" rx="2"/>
+  <rect x="16" y="13" width="4" height="7" rx="2"/>
+</svg>
 ```
 
-Naturally linear solid-family symbols may use strokes or expanded geometry at the 3 or 3.5 bar weight. Do not automatically use the thinner outline weight.
+Use paths, circles, rectangles, ellipses, and other native vector primitives. Keep files free of raster images, external references, scripts, filters, masks, and clip paths unless the requested integration genuinely requires a documented exception. Keep cutouts transparent; never paint them in the assumed background color. Scale strokes with the viewBox, without non-scaling-stroke. Bake static transforms into final coordinates when practical and use enough precision to preserve the drawing.
 
-## Complete construction anchors
+Keep clean editable strokes as the normal source. An **expanded SVG** converts those strokes into filled contours while preserving the same outlined appearance. A **solid icon** is a separately composed visual variant. Do not confuse either with **SolidJS**, the component framework.
 
-The following generic examples provide exact path data. Use them directly when requested or derive related geometry from their proportions. They establish the default family, not universal shapes for every project.
+For solid variants, design the silhouette and negative spaces intentionally. Do not simply fill every closed outline or add a thick stroke. Preserve recognition, optical size, and relationships with outline companions. Use compound paths with appropriate fill rules for real holes. Do not import the weights or proportions of an unrelated older solid family.
 
-### Home: solid
+# LETTERS, NUMERALS, AND RELATED CONTROLS
 
-```svg
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4 10.375 A0.75 0.75 0 0 1 4.3 9.775 L11.55 4.338 A0.75 0.75 0 0 1 12.45 4.338 L19.7 9.775 A0.75 0.75 0 0 1 20 10.375 L20 18.25 A0.75 0.75 0 0 1 19.25 19 L14.75 19 A0.75 0.75 0 0 1 14 18.25 L14 14.75 A0.75 0.75 0 0 0 13.25 14 L10.75 14 A0.75 0.75 0 0 0 10 14.75 L10 18.25 A0.75 0.75 0 0 1 9.25 19 L4.75 19 A0.75 0.75 0 0 1 4 18.25 Z" /></svg>
-```
+Use real font glyphs with one consistent font instance, scale, and weight for related labels. Convert fixed labels into SVG paths, preserving counters and proportions. Do not hand-improvise digits or stretch different strings to equal width. Use shaping for scripts that require it. If font conversion is unavailable, explain the limitation rather than claiming text is outlined or using an undisclosed substitute.
 
-### Home: outline
+Design the container, label, and directional head together. Reserve label space first. Center the label's combined ink bounds on its intended container, then inspect the complete symbol optically. Place circular arrowheads along the tangent, outside the protected label area. Check label-to-head and label-to-ring clearance including stroke extents. Compare the widest actual label. Mirror only directional geometry, never text.
 
-```svg
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.875 10.725 A0.75 0.75 0 0 1 5.175 10.125 L11.55 5.338 A0.75 0.75 0 0 1 12.45 5.338 L18.825 10.125 A0.75 0.75 0 0 1 19.125 10.725 L19.125 17.375 A0.75 0.75 0 0 1 18.375 18.125 L15.625 18.125 A0.75 0.75 0 0 1 14.875 17.375 L14.875 13.875 A0.75 0.75 0 0 0 14.125 13.125 L9.875 13.125 A0.75 0.75 0 0 0 9.125 13.875 L9.125 17.375 A0.75 0.75 0 0 1 8.375 18.125 L5.625 18.125 A0.75 0.75 0 0 1 4.875 17.375 Z" /></svg>
-```
+Use consistent triangles for play/track controls. Next/previous track have one triangle and a terminal bar; fast-forward/rewind have two triangles. Keep state pairs stable inside fixed controls. Do not automatically mirror playback symbols for RTL; distinguish navigation from media semantics.
 
-### Play: solid
+# DELIVERABLES AND EXPORT CHOICES
 
-```svg
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7 6.306 A0.75 0.75 0 0 1 8.128 5.658 L17.889 11.352 A0.75 0.75 0 0 1 17.889 12.648 L8.128 18.342 A0.75 0.75 0 0 1 7 17.694 Z" /></svg>
-```
+## Default file package
 
-### Play: outline
-
-```svg
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.875 7.776 A0.75 0.75 0 0 1 8.99 7.121 L16.574 11.345 A0.75 0.75 0 0 1 16.574 12.655 L8.99 16.879 A0.75 0.75 0 0 1 7.875 16.224 Z" /></svg>
-```
-
-### Pause: solid
-
-```svg
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><rect x="7" y="5" width="3.5" height="14" rx=".75"/><rect x="13.5" y="5" width="3.5" height="14" rx=".75"/></svg>
-```
-
-### Pause: outline
-
-```svg
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.75 5.875V18.125 M15.25 5.875V18.125"/></svg>
-```
-
-Structural corners in these anchors use 0.75-unit arcs. Pause bars are 3.5 × 14 units with a 3-unit gap. Outline pause centerlines preserve the solid bars' centers and visible height, using single strokes instead of cramped hollow rectangles.
-
-For other polygons, construct circular corners by locating tangent points on both adjacent edges:
+For a new icon or set, when file creation is available:
 
 ```text
-u = unit vector from corner to previous vertex
-v = unit vector from corner to next vertex
-angle = acos(clamp(dot(u, v), -1, 1))
-tangent distance = radius / tan(angle / 2)
-arc start = corner + u × tangent distance
-arc end = corner + v × tangent distance
+icons/
+  svg/24/home-outline.svg
+  preview.html
+  README.md
+  manifest.json
 ```
 
-Connect tangent points with circular SVG arcs, choosing sweep from the polygon's turn direction. Reject collinear/reversing vertices and radii that cause adjacent arcs to overlap. Keep delivered SVGs independent of runtime geometry code.
+The SVG path above illustrates naming, not an instruction to add a home icon. Use lowercase kebab-case names and `-outline` or `-solid` suffixes. Native size folders are `svg/16/`, `svg/20/`, `svg/24/`, or the explicitly requested custom size. Standalone width/height match the native size; consumers may resize them.
 
-# ICONS CONTAINING TEXT OR NUMERALS
+- **SVGs:** one complete file per requested icon × visual variant × native size.
+- **preview.html:** self-contained inline SVG; no remote fonts, libraries, or assets. Show 16/20/24/32px display sizes and a 72px detail, both polarities, and a 24px sample beside regular 16px text. Identify each native master so rescaled displays are not mistaken for optical variants. Adapt review sizes if the user specifies another range.
+- **README.md:** inventory, formats, native grids, weight choices, naming/import guidance, accessibility usage, practical minimum sizes, and concise structural/rendered verification status. Do not include personal paths or private references.
+- **manifest.json:** schema version, stable icon name, visual variant, native frame/viewBox, relative SVG path, and checks actually performed. Optional documented fields may record stroke weight, intended sizes, optical notes, and limitations. Use null/unknown rather than inventing a measurement or approval.
+- **icons.zip:** include the finished SVGs, preview, README, manifest, and requested optional exports for a multi-icon set. Omit the archive for a single icon unless requested. Exclude source references, third-party library assets, font files, caches, temporary scripts, and superseded outputs.
 
-Use a real, appropriately licensed typeface rather than improvising letters or digits from unrelated strokes. Choose one font instance, weight, baseline policy, and uniform scale for the related icon family. Preserve natural proportions and spacing; do not stretch each label to equal width.
+A narrow request such as “SVG only,” “components only,” “no labels,” “in Paper,” or “just the prompt” overrides this default package. Do not create extra deliverables to satisfy a template against the user's explicit scope.
 
-For fixed short labels, convert shaped glyph outlines to filled SVG paths so the delivered icon has no font dependency. Preserve glyph contours and counters. Use actual shaping for scripts or combinations that require it; simple decimal strings may use the font's advances. Keep the font source and conversion settings in working files, outside a minimal delivery ZIP.
+## Optional formats
 
-Center the visible bounds of the complete label within its intended container, not each character separately and not an assumed text advance box. Inspect optical balance afterward. Keep directional icon geometry separate from glyph geometry so mirroring never reverses the text.
+| Choice | Files and behavior |
+|---|---|
+| React | `react/24/HomeOutlineIcon.tsx` and `index.ts`; typed size/SVG props, currentColor, accessible naming support |
+| Vue | `vue/24/HomeOutlineIcon.vue` and `index.ts`; size props, inherited SVG attributes, currentColor |
+| SolidJS | `solidjs/24/HomeOutlineIcon.tsx` and `index.ts`; native SolidJS SVG props, currentColor |
+| React Native | `react-native/24/HomeOutlineIcon.tsx` and `index.ts`; use react-native-svg primitives, explicit size/color props, appropriate native accessibility props; document the peer dependency |
+| Astro | `astro/24/HomeOutlineIcon.astro`; typed size/SVG attributes and currentColor |
+| Expanded SVG | `svg-expanded/24/<name>-outline.svg`; true expanded stroke geometry, with editable original retained unless excluded |
+| PNG | `png/24/<name>-outline.png`; transparent raster at the requested pixel size/color. A 24px icon at 2× is a 48×48px file named `<name>-outline@2x.png` |
 
-For enclosed numerals, design the container and label together. Reserve a protected label region before positioning arrowheads. Center labels on the actual circle center, which need not equal the canvas center. Put circular-arrow heads on the tangent and outside the label region; derive mirrored pairs from shared circle geometry. Measuring only text bounds is not sufficient: check label-to-head and label-to-ring clearance, including stroke expansion.
+Use the corresponding native-size folder for compact masters. Components preserve the approved geometry and distinguish native drawing size from the display size prop. Follow the target project's existing conventions. Do not install a framework or dependency simply to export its component files. Validate syntax/builds using available project tooling and report any validation limitation. Raw web SVG is not automatically a valid React Native component.
 
-A tested starting construction for two-digit time controls uses circle center (12,13), radius 7.5, a 2.25-unit ring, a top-tangent arrowhead, and medium-bold digits at a shared 5.2-unit height centered on (12,13). Maintain at least 2.5 units of vertical clearance between the arrowhead's lowest edge and the numeral's top edge for this construction. These are coordinated example values, not universal requirements. Inspect the complete symbol at 16/20/24/32px in both polarities; numeric centering assertions do not prove optical balance. Keep a larger practical minimum size if digits cannot remain legible.
+If PNG is requested without settings, use black on transparency, 24×24px at 1×. Other default choices remain SVG-based. Never substitute raster previews for requested editable vectors.
 
-## Coordinated construction example
+SF Symbols need a proper compatible template and a separate validation workflow; do not promise a valid symbol export by renaming an SVG. If asked, establish the target and available tooling before claiming support.
 
-Use one shared geometry definition for a related pair. The complete icon may have an asymmetric outer silhouette; its label is centered on the circle, not on the full icon's bounding box.
+When exporting to a canvas, make the icon paths editable, preserve the original studies, and inspect the actual rendered frame. A static mockup is not tested application behavior.
 
-```ts
-const timeControl = {
-  circle: { cx: 12, cy: 13, radius: 7.5 },
-  ringWidth: 2.25,
-  label: {
-    referenceDigitHeight: 5.2,
-    centerX: 12,
-    centerY: 13,
-    // One font instance and scale for all labels; retain natural overshoot.
-    weight: 600,
-  },
-  minimumHeadToLabelVerticalGap: 2.5,
-};
-```
+## No file tools
 
-Weight 600 is a starting point for a compatible variable sans-serif, not a promise of equivalent appearance across typefaces. The reference height is measured from the font's zero. Other digits may have slightly different ink heights because of overshoot; do not rescale each string to erase those differences.
+Return complete files in filename-labelled code blocks, without omitted path data or ellipses. For a large set, use consecutive labelled batches until the requested inventory is complete. Do not invent downloads, ZIPs, screenshots, or successful rendering. Provide the standalone SVGs even if canvas or browser tools are unavailable, and state what could not be verified.
 
-The pair's circular centerlines are:
+# VERIFICATION AND HANDOFF
 
-```svg
-<!-- Back: long arc, ending at the top tangent. -->
-<path d="M5.505 9.25 A7.5 7.5 0 1 0 12 5.5"
-  fill="none" stroke="currentColor" stroke-width="2.25"
-  stroke-linecap="round"/>
+Parse the SVGs; check the inventory, viewBoxes, native dimensions, supported elements, color behavior, and real transparency. Syntax success alone does not prove that path data renders correctly. Inspect enlarged contours and actual-size silhouettes in both light and dark contexts. Look for closed-up counters, crowded numeric labels, clipped strokes, heavy overlaps, uneven apparent weight, and unstable state pairs.
 
-<!-- Forward: horizontally mirrored circle geometry. -->
-<path d="M18.495 9.25 A7.5 7.5 0 1 1 12 5.5"
-  fill="none" stroke="currentColor" stroke-width="2.25"
-  stroke-linecap="round"/>
-```
+Check specimen overflow on a narrow viewport when an HTML specimen is included. For requested interactions, verify labels, keyboard operation, immediate state changes, rapid reversal, and reduced motion if animation exists. Keep the control's hit area stationary and separate from the drawn symbol. Static icons need no invented animation or interaction demo.
 
-Construct the rounded arrowheads with a 0.35-unit radius:
+Correct material faults and rebuild affected outputs, including archives, from the final SVGs. Distinguish structural validation, rendered inspection, user approval, and actual application integration. Do not claim unperformed checks or automatically promote generated icons to permanent approved references.
 
-```ts
-const backHead = [[9, 5.5], [12.5, 3.3], [12.5, 7.7]];
-const forwardHead = [[15, 5.5], [11.5, 3.3], [11.5, 7.7]];
-// Feed each polygon into a circular-corner generator.
-// Mirror the arrow geometry only, never the numerals.
-```
-
-Typeset the full label, convert it into paths, measure its combined ink bounds, and translate it into the circle. The following is build-time inspection logic, not a runtime dependency:
-
-```js
-function labelPlacement(bounds, center = { x: 12, y: 13 }) {
-  return {
-    dx: center.x - (bounds.x + bounds.width / 2),
-    dy: center.y - (bounds.y + bounds.height / 2),
-  };
-}
-
-function verticalClearance(labelBounds, arrowBounds) {
-  return labelBounds.y - (arrowBounds.y + arrowBounds.height);
-}
-```
-
-Bake the placement into final path coordinates. Inspect the nearest distance to the ring separately: vertical arrow clearance does not prove clearance from all surrounding shapes. Do not report a bounding-box check as a pixel-accurate contour-distance measurement.
-
-The approved reference pair has label ink centers at (12,13), about 3 units of vertical arrowhead clearance, and label widths of approximately 6.92 units for 15 and 8.61 for 30. Unequal widths are intentional; the font and scale are shared. These measurements are regression references for this construction, not mandatory dimensions for all numbered icons.
-
-## Visual acceptance
-
-- Review the arrowhead, ring, label, and gap as one composition, including at 100% display size.
-- Compare both directions and all requested values together. Include the widest actual label.
-- Show 16/20/24/32px in both polarities, plus an enlarged detail view for contour defects.
-- Numeric checks establish geometry; rendered inspection establishes perceived balance. Neither replaces the other.
-- Prefer a structural correction when the head invades the label space. Shrinking or nudging text alone may preserve the underlying fault.
-- Mark user-approved results as approved only at their actual scope. Preserve that geometry as a reusable anchor; do not generalize one approval to every icon or size.
-- Rebuild the specimen, exported showcase, and ZIP from the final SVGs. Check archive contents so no stale version remains.
-
-Primary references: [Material icon construction](https://m3.material.io/styles/icons/designing-icons) explains grid-based geometry, optical corrections, and actual-size review. [Carbon icon usage](https://carbondesignsystem.com/elements/icons/usage) discusses consistent sizing and pairing icons with text. Adopt principles without silently importing another system's specific weights or geometry.
-
-# OUTLINE COMPANIONS
-
-Generate only when requested. Redraw for the stroke thickness while preserving orientation, proportions, and distinguishing features.
-
-- Do not simply remove fill and stroke every solid boundary.
-- Avoid doubled internal edges and cramped cavities.
-- Narrow bars may become single centerline strokes; apply the choice consistently.
-- Preserve recognition and negative space at small sizes.
-- Optical companions do not need identical ink coverage or exact mathematical offsets.
-
-# FAMILY RELATIONSHIPS
-
-Use related triangle geometry for play and track controls, adjusting the footprint for terminal bars. Next/previous track use one triangle and one terminal bar; fast-forward/rewind use two triangles. Build arrow directions from common geometry. Keep stems, bars, and corners consistent. Prefer one or two primary forms, but preserve additional parts when meaning requires them.
-
-Do not automatically mirror media controls in right-to-left interfaces; distinguish navigation direction from playback semantics.
-
-# REFERENCE-BASED ICONS
-
-Extract the identifying silhouette and relationships between parts. Remove perspective, texture, accidental roughness, and dispensable detail. Favor a coherent silhouette over tiny detached fragments. Preserve internal identity through negative space where possible.
-
-Do not silently replace a specific reference with a generic symbol. Explain meaningful omissions. If the mark needs a larger minimum size, state it. Detailed emblems need not satisfy the same detail budget as simple controls.
-
-# OPTIONAL INTERACTION EXAMPLES
-
-Only include interactions requested in the input section. Static SVGs remain independent.
-
-Use native buttons, fixed control dimensions, immediate action/state/label updates, and safe rapid reversal. Label the current available action. Use `aria-pressed` only for true toggles. Do not add fake loading or defer functionality until motion finishes.
-
-When restrained motion is requested, this is the default press-feedback implementation:
-
-```css
-.icon-control {
-  display: inline-grid;
-  place-items: center;
-  inline-size: 48px;
-  block-size: 48px;
-  padding: 0;
-}
-.icon-control__glyph {
-  display: block;
-  inline-size: 24px;
-  block-size: 24px;
-  transform-origin: center;
-  transition: transform 140ms cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-.icon-control__glyph > svg {
-  display: block;
-  inline-size: 100%;
-  block-size: 100%;
-}
-.icon-control:active:not(:disabled) .icon-control__glyph {
-  transform: scale(0.97);
-}
-.icon-control:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 4px;
-}
-@media (prefers-reduced-motion: reduce) {
-  .icon-control__glyph { transition: none; }
-  .icon-control:active:not(:disabled) .icon-control__glyph {
-    transform: none;
-  }
-}
-```
-
-Prefer immediate symbol replacement. Do not add path morphs unless requested. No default idle loops, shimmer, blur, jelly deformation, decorative spinning, or bounce. Keep the hit area stationary. Motion should be interruptible and must not change layout. Reduced motion removes movement while preserving state changes.
-
-# TECHNICAL OUTPUT
-
-Deliver real editable SVGs, using paths/circles/rectangles/ellipses where possible. No rasters, external assets, filters, masks, clip paths, or background shapes. Bake static transforms into coordinates. Use concise path data with appropriate precision.
-
-Use kebab-case filenames such as `home-solid.svg` and `home-outline.svg`. If requested, add native components named `HomeIcon` and `HomeOutlineIcon`, supporting size props, CSS sizing, forwarded SVG attributes, and accessible naming. Do not install dependencies or change project architecture.
-
-# SPECIMEN AND VERIFICATION
-
-Provide a responsive self-contained `preview.html` with inline SVGs:
-- Each requested icon at 16/20/24/32px and an enlarged 72px view.
-- Solid/outline comparisons when requested.
-- Dark-on-light and light-on-dark examples.
-- Examples beside regular-weight 16px text, with labels outside the artwork.
-- Requested state pairs in fixed controls.
-
-Inspect actual sizes rather than only enlarged geometry. Check perceived size/weight, open cutouts, corner consistency, stroke bounds, recognition, related symbol alignment, transparent holes, and narrow-mobile overflow. Distinguish fixed button bounds from optical stability when symbols swap; check both. For interactive examples, check keyboard activation, rapid reversal, and reduced motion.
-
-Parse SVGs and inspect desktop/mobile rendering when tools permit. Correct material issues in a bounded pass. If rendering is unavailable, explicitly state that visual verification was not performed.
-
-For a large uncertain set, use a representative specimen before expansion. Reuse approved shapes and prior checks for unchanged work. Newly generated icons are review candidates, not automatically permanent approved anchors. Do not require redundant approval for work already authorized.
-
-# DELIVER
-
-1. Complete standalone SVGs for every requested icon and variant.
-2. Framework-native components if requested.
-3. Self-contained `preview.html`, unless the user explicitly narrowed the deliverable.
-4. A ZIP when file-writing tools are available and packaging is useful.
-5. A one-line inventory and a brief factual verification note with material limitations.
-
-Create files and provide working links when tools allow; otherwise return complete files in separate filename-labeled code blocks. No omitted paths, placeholder geometry, external library substitutions, or instructions in place of work you can complete.
+Deliver working file links or complete code, a concise inventory, and a factual verification note with remaining limitations. Complete the requested result without adding unnecessary approval gates or unrelated setup.

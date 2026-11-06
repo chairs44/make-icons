@@ -1,6 +1,6 @@
 # Make Icons
 
-A coding-agent skill for making custom SVG icons that belong together. Compact silhouettes, controlled soft corners, clear negative space, and editable vector geometry.
+A coding-agent skill for making custom SVG icons that belong together. Open contours, balanced proportions, clear negative space, and editable vector geometry.
 
 ![Sixteen Make Icons samples in two rows of eight, from Face ID and a radio telescope to a download and checkmark.](docs/make-icons-showcase.png)
 
@@ -8,11 +8,13 @@ A coding-agent skill for making custom SVG icons that belong together. Compact s
 
 ## What it does
 
-Make Icons gives your agent a drawing system, construction examples, and tools for checking a set together. Ask for the symbols you need, or provide visual references to simplify into icons.
+Make Icons gives your agent a drawing system, construction examples, and tools for checking a set together. The default is a 24-unit outline family with a 1.5-unit stroke. Ask for the symbols you need, or provide visual references to simplify into icons.
 
 1. **Draw** standalone SVGs using shared proportions, circular corners, and transparent cutouts.
 2. **Compare** the set at 16, 20, 24, and 32 pixels, with enlarged views and light/dark contexts.
-3. **Deliver** editable files and an HTML specimen. Add outline companions, components, or motion only when requested.
+3. **Deliver** editable files and an HTML specimen. Add solid variants, components, or motion only when requested.
+
+Optional exports include React, Vue, SolidJS, React Native, Astro, expanded SVG, and PNG. Expanded outlines preserve the outline appearance; they are not solid variants.
 
 The rules are defaults, not a fixed icon catalogue. Optical balance and recognition matter more than identical bounding boxes. An agent still needs to inspect the rendered result; the scripts do not certify visual quality.
 
@@ -22,11 +24,12 @@ The rules are defaults, not a fixed icon catalogue. Optical balance and recognit
 | --- | --- |
 | [`SKILL.md`](SKILL.md) | Agent instructions and workflow |
 | [`references/master-prompt.md`](references/master-prompt.md) | Complete copy-and-paste prompt, specifications, and construction examples |
-| [`assets/anchors/`](assets/anchors/) | Eight solid/outline and numbered-control construction anchors |
+| [`assets/outline-24/`](assets/outline-24/) | Twenty-eight current outline construction references |
 | [`scripts/geometry.py`](scripts/geometry.py) | Exact circular corners for polygons, using Python's standard library |
-| [`scripts/specimen.py`](scripts/specimen.py) | Basic SVG validation, comparison sheet, and ZIP packaging |
-| [`samples/icons/`](samples/icons/) | The sixteen SVGs shown above |
-| [`samples/specimen.html`](samples/specimen.html) | Self-contained specimen; download and open in a browser |
+| [`scripts/specimen.py`](scripts/specimen.py) | Recursive SVG validation, comparison sheet, manifest, and ZIP packaging |
+| [`assets/legacy-solid/`](assets/legacy-solid/) | Eight preserved examples for matching the earlier family |
+| [`samples/svg/24/`](samples/svg/24/) | The sixteen SVGs shown above |
+| [`samples/preview.html`](samples/preview.html) | Self-contained specimen; download and open in a browser |
 | [`make-icons-samples.zip`](https://github.com/chairs44/make-icons/raw/refs/heads/main/make-icons-samples.zip) | Downloadable sample pack |
 | [`agents/openai.yaml`](agents/openai.yaml) | Display metadata for compatible agents |
 
@@ -45,12 +48,12 @@ For a chat-only workflow, open the [master prompt](references/master-prompt.md),
 ## Usage
 
 ```text
-Use make-icons to create a cohesive solid SVG set:
+Use make-icons to create a cohesive outline SVG set:
 seed vault, field recorder, radio telescope, and night train.
 Deliver the editable SVGs and a self-contained comparison specimen.
 ```
 
-Ask explicitly for solid + outline variants or a React/Astro component when needed. Attach references when a specific object or mark matters.
+Ask explicitly for solid variants or compact native masters or a React/Astro component when needed. Attach references when a specific object or mark matters.
 
 To inspect your own SVG directory:
 
@@ -66,18 +69,18 @@ Open the HTML in a browser. Check recognition at actual size, transparent cutout
 | Property | Default |
 | --- | --- |
 | Canvas | `viewBox="0 0 24 24"` |
-| Visible bounds | 3–21 units; up to 0.5 unit of optical overshoot |
-| Character | Compact, slightly squat solid silhouettes; short extensions |
-| Corners | 0.75-unit structural radius; 1.25-unit broad-body radius where appropriate |
-| Solid bars | 3 or 3.5 units |
-| Outline companions | 1.75-unit stroke; redrawn for the weight |
+| Visible bounds | 2–22 units including stroke; modest optical overshoot where needed |
+| Character | Open outlines, natural subject proportions, restrained rounding |
+| Corners | About 2 units for broad corners; 0.75–1.5 for smaller transitions |
+| Default stroke | 1.5 units with round caps and joins |
+| Native sizes | 24 by default; separately drawn compact 16/20 masters on request |
 | Negative space | At least 2 units; preferably 2.5–3 at small sizes |
 | Colour | `currentColor`; transparent cutouts, no background-coloured holes |
 | Typography | Real font outlines with consistent weight and scale |
 | Review | 16, 20, 24, 32px, plus enlarged views and both polarities |
-| Output | Standalone editable SVG and self-contained HTML specimen |
+| Output | SVG, preview, README, manifest, and a ZIP for sets |
 
-Family-wide consistency takes priority over literal repetition of every token. The sample Face ID uses finer internal detail; dense symbols are best at 24px or larger. The full prompt explains optical corrections, numeral spacing, accessibility, and reference simplification.
+Family-wide consistency takes priority over literal repetition of every token. All sixteen samples use the same 1.5-unit outline weight. Dense symbols are best at 24px or larger; the smaller previews scale the same master. The full prompt explains optical corrections, numeral spacing, accessibility, and reference simplification.
 
 ## Samples
 

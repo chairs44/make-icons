@@ -1,38 +1,57 @@
 ---
 name: make-icons
-description: Create or refine cohesive custom SVG icon sets with compact solid silhouettes, engineered soft corners, optional outline companions, and rendered specimens. Use for icon design, reference simplification into icons, or reusable icon-generation prompts.
+description: Create or refine custom SVG icons and cohesive icon sets, including reference-based symbols, export files, and visual specimens.
 ---
 
 # Make Icons
 
-Create editable vector icons with a coherent drawing system. Default to compact, slightly squat solid silhouettes, controlled circular corners, short extensions, clear cutouts, and monochrome `currentColor`. Optional outlines share the same character. Soft edges must not become inflated or cartoon-like.
+Draw original, editable vector icons with open contours, balanced proportions, restrained rounding, and clear negative space. The default family is **outline, 24-unit grid, 1.5-unit stroke**. Personality comes from the subject's silhouette and curve handling, not forced squat proportions or decorative irregularity.
 
-## Start from the request
+## Establish the request
 
-Use the icon list, variants, references, framework, and interaction scope already supplied. Ask only for missing information that changes the result, especially an absent icon inventory or ambiguous symbol meaning. Do not repeat an intake form when the conversation already answers it.
+Use the icon inventory, meaning, references, target context, output formats, and sizes already supplied. A single icon is a complete request. Reference images, SVGs, or a folder can define the subjects when their intended mapping is clear; inspect them before drawing. Ask one focused question only when a missing subject, ambiguous meaning, or target-specific constraint materially changes the result. Do not require a form or repeat answered questions.
 
-Read [references/master-prompt.md](references/master-prompt.md) for the complete reusable prompt, specifications, construction examples, and delivery contract. It is also the source to adapt when the user requests a copyable generic prompt. All user-editable inputs belong at its beginning.
+Explicit user instructions and an established project's approved icon system override these defaults. Preserve requested file formats, dimensions, and naming conventions. Creating icons does not by itself authorize website integration, dependency installation, publishing, or updating this skill's permanent anchors.
 
-## Apply the system with judgment
+## Use the specification and references
 
-- The reference defines **defaults**, not an override of explicit user instructions or an established project's icon system. Preserve requested sizes, formats, and local conventions. State material departures briefly.
-- Keep the 24-unit grid and 1.75-unit outline consistent within the default family. Change family-wide tokens deliberately if asked; do not quietly vary weights icon by icon.
-- Exact circular corners use arc commands or rounded rectangles. Bézier curves remain appropriate for deliberately organic contours. Optical balance outranks identical bounding boxes.
-- For text-bearing icons, follow the master prompt’s typography section: real font outlines, shared weight/scale, and no hand-improvised digits. Design the container, arrowhead, and protected label space together; center on the container, then inspect the whole symbol. A passing bounding-box check alone is not visual approval.
-- Simple controls and detailed emblems need different simplification decisions. A reference-based mark may need a larger practical minimum size. Disclose identity lost through simplification rather than forcing every motif into the same detail budget.
-- Use native SVG/code for editable vector deliverables. Do not substitute raster mockups for finished SVGs.
-- For a small request, draw and show the requested icons. For a large or uncertain set, start with representative structural, directional, and reference-based symbols before expanding. Do not add an approval gate to work already authorized; present genuine visual choices when they matter.
-- A specimen is the default for a new family. A focused edit may reuse the existing specimen and verify only affected icons. Do not turn every minor adjustment into a full design process.
-- Components, motion, production integration, publishing, and installation are separate scopes. Generate only what was requested. A request to make icons does not authorize replacing project UI or installing dependencies.
+- Before creating a new family or resolving construction/export decisions, read [references/master-prompt.md](references/master-prompt.md). It is the complete, self-contained design and delivery contract. Its input block is a template for people using the prompt directly, not a mandatory intake form for skill users.
+- Select a few structurally relevant files from [references/anchors.md](references/anchors.md) and `assets/outline-24/`. Compare geometry as well as rendered appearance. The 28 examples cover controls, organic objects, technical symbols, and asymmetric forms; they are references, not an obligatory output inventory.
+- Read the compact-size and typography sections of the master prompt when working at 16/20 native units or with letters/numerals. Read its export section for framework components, expanded paths, or raster requests.
+- For a reusable prompt request, return the master prompt with **all editable inputs at the beginning**. It must work without this skill, bundled scripts, a specific design application, or private project context.
 
-## Reusable resources
+## Construct the family
 
-- `assets/anchors/`: eight generic SVGs: home/play/pause solid and outline, plus approved back-15/forward-30 solid controls. The numeral pair demonstrates top-tangent arrowheads and protected interior spacing. Useful starting geometry, not a universal inventory. No personal marks or source photographs are bundled.
-- [scripts/geometry.py](scripts/geometry.py): standard-library Python helper for exact circular polygon corners. Import `rounded_polygon`, or pass `--points '[[7,5],[19,12],[7,19]]' --radius .75` to print path data. This is build-time generation; delivered icons must render without it.
-- [scripts/specimen.py](scripts/specimen.py): creates a self-contained comparison HTML file from an SVG directory and optionally a ZIP. Shows 16/20/24/32px plus a 72px inspection view, light/dark contexts, and inline text. It validates basic SVG structure but does not claim visual QA. Run `--help` for options. Custom interaction examples should be added only when requested.
+Use the same stroke weight and terminal policy across related symbols. Start broad container corners around 2 units, but preserve natural circles, organic Bézier contours, directional points, and smaller structural transitions. Measure visible bounds including stroke extents. Match apparent size, not identical bounding boxes. Keep openings legible and avoid heavy seams where parts meet.
 
-## Finish proportionately
+Keep `currentColor`, transparent negative space, and scalable SVG geometry. Use path/shape data rather than a raster substitute. Treat an expanded outline and a visually solid variant as different things. Preserve reference identity; do not replace a distinctive supplied mark with a generic symbol without explaining what would be lost.
 
-Parse SVGs, render them when possible, inspect actual small-size appearance, and compare related states in fixed containers. Check desktop/mobile specimen overflow; test keyboard, rapid reversal, and reduced motion only when interactions are present. Existing verified geometry can be reused, but new combinations still need an optical check. For enclosed text, measure the label center and head-to-label clearance, account for stroke extents, and inspect both polarities. If the user identifies crowding, reconsider the composition rather than repeating a centering calculation. Refresh packaged assets and showcase images after changes so they match the SVGs.
+Use real font outlines for fixed letters and numerals. Reserve label space before placing surrounding rings or arrowheads; center on the intended container, then review the complete symbol. Mirror directional geometry without mirroring text. The previous family's 2.25-unit time-control rings are not the new family's default.
 
-Deliver working file links and a concise inventory. Distinguish structural checks, rendered checks, user approval, and production use. Do not claim unperformed checks or treat every newly generated icon as a permanent approved anchor.
+A small request can go directly to finished icons. For a broad or uncertain family, establish a representative structural, directional, and organic subset internally, then complete the requested set. Stop for design approval only if the user requested that checkpoint or a material unresolved choice requires it.
+
+## Deliver the requested scope
+
+For ordinary file generation, default to:
+
+- Standalone `svg/24/<name>-outline.svg` files with a `0 0 24 24` viewBox and `24 × 24` default dimensions.
+- `preview.html` with 16/20/24/32px display samples, 72px details, both polarities, and text pairing.
+- `README.md` and `manifest.json` identifying files, native grids, variants, practical size limits, and checks actually performed.
+- `icons.zip` for a multi-icon delivery when file tools are available; omit for a single icon unless requested.
+
+Requested components are additional unless the user asks for components only. Optional exports include React, Vue, SolidJS, React Native, Astro, expanded SVG, and PNG. Compact 16/20-unit masters are a separate design choice from displaying a 24-unit SVG at those sizes. The master prompt defines exact extensions, folders, and limitations.
+
+Default sensibly when no export format is specified. Offer one concise format/size choice when the target is unclear and the choice changes the work, or when the user asks to choose exports. Never treat blank optional fields as blocking. A Paper-only, SVG-only, text-free, prompt-only, or narrowly scoped edit request overrides the normal package. For Paper, use editable vectors and inspect the resulting frame; do not force an HTML package into a canvas-only task.
+
+## Reusable helpers
+
+- [scripts/geometry.py](scripts/geometry.py): build-time circular polygon corners. Use only when exact circular corners fit the shape. It does not round arbitrary organic contours or decide optical balance.
+- [scripts/specimen.py](scripts/specimen.py): standard-library SVG parsing, recursive specimens, optional manifest generation, and ZIP assembly. Run `--help` for its interface. It does not generate artwork, convert strokes, produce framework components, or certify visual quality. Include only intended deliverables in archives.
+
+`assets/legacy-solid/` preserves eight earlier-family examples for explicit legacy matching. Do not use their weight/proportion defaults for new work. Original files under `assets/anchors/`, where present in an existing installation, are also legacy; the active reference bank is `assets/outline-24/`.
+
+## Verify and finish
+
+Parse new SVGs and check requested inventory, native grids, bounds, consistent weight, and transparent holes. Render at the actual intended sizes when available, inspect light and dark contexts, and compare related states in fixed containers. Correct recognition, crowding, contour, or layout faults before delivery. For components or interactions, run checks appropriate to that target; static artwork does not require an interaction test suite.
+
+The helper's parser proves only its documented structural checks. Do not equate parse success with correct path rendering, accessible integration, optical tuning, or user approval. Record unperformed checks honestly. Rebuild affected previews and archives after corrections. Reuse valid checks for unchanged work and finish once the requested files and proportionate review are complete.

@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "icons": [
+    {
+      "name": "book-swap",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/book-swap-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "checkmark",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/checkmark-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "download",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/download-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "face-id",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/face-id-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "fermentation",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/fermentation-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "field-recorder",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/field-recorder-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "kite",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/kite-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "microscope",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/microscope-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "mushroom",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/mushroom-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "night-train",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/night-train-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "orbital-dock",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/orbital-dock-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "radio-telescope",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/radio-telescope-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "seed-vault",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/seed-vault-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "switchback",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/switchback-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "tape-loop",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/tape-loop-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    },
+    {
+      "name": "tidal-energy",
+      "variant": "outline",
+      "native_size": 24.0,
+      "view_box": [
+        0.0,
+        0.0,
+        24.0,
+        24.0
+      ],
+      "file": "svg/24/tidal-energy-outline.svg",
+      "checks": {
+        "xml_parsed": true,
+        "rendered_review": "not_performed_by_helper",
+        "optical_review": "not_performed_by_helper"
+      }
+    }
+  ]
+}
