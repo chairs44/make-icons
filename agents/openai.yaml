@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make Icons"
+  short_description: "Create consistent solid and outline SVG icons"
+  default_prompt: "Use $make-icons to create a consistent custom SVG icon set and a review specimen."
