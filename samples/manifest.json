@@ -14,8 +14,8 @@
       "file": "svg/24/book-swap-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -31,8 +31,8 @@
       "file": "svg/24/checkmark-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -48,8 +48,8 @@
       "file": "svg/24/download-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -65,8 +65,8 @@
       "file": "svg/24/face-id-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -82,8 +82,8 @@
       "file": "svg/24/fermentation-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -99,8 +99,8 @@
       "file": "svg/24/field-recorder-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -116,8 +116,8 @@
       "file": "svg/24/kite-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -133,8 +133,8 @@
       "file": "svg/24/microscope-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -150,8 +150,8 @@
       "file": "svg/24/mushroom-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -167,8 +167,8 @@
       "file": "svg/24/night-train-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -184,8 +184,8 @@
       "file": "svg/24/orbital-dock-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -201,8 +201,8 @@
       "file": "svg/24/radio-telescope-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -218,8 +218,8 @@
       "file": "svg/24/seed-vault-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -235,8 +235,8 @@
       "file": "svg/24/switchback-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -252,8 +252,8 @@
       "file": "svg/24/tape-loop-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     },
     {
@@ -269,8 +269,8 @@
       "file": "svg/24/tidal-energy-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "not_performed_by_helper",
-        "optical_review": "not_performed_by_helper"
+        "rendered_review": "Chromium: 16/20/24/32px and 72px, light and dark",
+        "optical_review": "Reviewed as a set; dense subjects recommended at 24px or larger"
       }
     }
   ]
