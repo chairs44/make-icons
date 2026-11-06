@@ -4,7 +4,7 @@ A coding-agent skill for making custom SVG icons that belong together. Open cont
 
 ![Sixteen Make Icons samples in two rows of eight, from Face ID and a radio telescope to a download and checkmark.](docs/make-icons-showcase.png)
 
-[Download the sample pack](https://github.com/chairs44/make-icons/raw/refs/heads/main/make-icons-samples.zip) · [Copy the complete prompt](references/master-prompt.md) · [Read the skill](SKILL.md)
+[Skill](SKILL.md) · [Prompt](references/master-prompt.md) · [Sample Pack](https://github.com/chairs44/make-icons/raw/refs/heads/main/make-icons-samples.zip)
 
 ## What it does
 
