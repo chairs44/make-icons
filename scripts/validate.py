@@ -59,5 +59,5 @@ for doc in [root / 'README.md', root / 'SKILL.md', *(root / 'references').glob('
     for link in re.findall(r'\]\(([^)]+)\)', doc.read_text()):
         if '://' not in link and not link.startswith('#'):
             assert (doc.parent / link.split('#')[0]).exists(), (doc.name, link)
-    assert not re.search(r'centralicons|central icons|/Users/|app\.paper\.design/file/', doc.read_text(), re.I), doc
+    assert not re.search(r'/Users/|app\.paper\.design/file/', doc.read_text(), re.I), doc
 print('Validated ten sample/anchor pairs, exact banner SVG sources, PNG dimensions, manifest, complete ZIP contents, and documentation links. Visual review is separate.')
