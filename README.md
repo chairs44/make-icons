@@ -41,7 +41,9 @@ The default is a 24-unit outline family with a 1.5-unit stroke. The [constructio
 - Shape organic forms with flowing curves and purposeful taper.
 - Plan shared edges, crossings, and modifiers so contours stay readable without doubled lines or crowded intersections.
 
-The rules define a drawing approach, not a fixed catalogue. Supplied references and an established project system take precedence. Visual review is necessary; no script certifies artistic quality.
+The rules define a drawing approach, not a fixed catalogue. Choose reproduction for a faithful source match, adaptation for new subjects in a supplied family, or invention when no source defines the result. Reproduction may reuse supplied SVG geometry or reconstruct a raster contour; originality is not a mandatory constraint. Source terms still govern redistribution.
+
+The [fidelity review](references/fidelity-review.md) adds a second pass after drawing: inspect the rendered subject and its connections, compare reference proportions and terminals, then check actual-size clarity. References outrank generic defaults. Raster reconstruction is not verified equality with an unavailable source SVG. No script certifies artistic quality.
 
 | Property | Default |
 | --- | --- |
@@ -75,12 +77,18 @@ For a packaged delivery, keep the SVG directory and optional included files insi
 | [SKILL.md](SKILL.md) | Agent workflow and supporting-document routes |
 | [references/master-prompt.md](references/master-prompt.md) | Self-contained prompt, inputs, specifications, and export contract |
 | [references/construction.md](references/construction.md) | Contour, proportion, and optical construction rules |
+| [scripts/compare.py](scripts/compare.py) | Offline reference/output comparison with adjustable overlay |
+| [evals/README.md](evals/README.md) | Repeatable baseline, treatment, and activation evaluation |
 | [scripts/geometry.py](scripts/geometry.py) | Exact circular corners for polygons |
 | [scripts/specimen.py](scripts/specimen.py) | SVG structure checks, comparison HTML, manifest, and ZIP assembly |
 | [scripts/validate.py](scripts/validate.py) | Package consistency checks |
 
 The specimen helper checks XML and supported structure, not path correctness, optical balance, or accessibility of an application. Run `python3 scripts/validate.py` from this repository to check the shipped package. Inspect rendered artwork separately after geometry changes and regenerate affected previews, images, and archives together.
 
+## Evaluation
+
+[Controlled pilot findings](evals/RESULTS.md) cover three drawing cases and six activation probes. Results were mixed; no universal quality advantage is claimed. The reusable protocol and visual review steps support continued testing.
+
 ## License
 
-MIT. See [LICENSE](LICENSE). The skill, helpers, and original sample icons may be used personally or commercially under that license.
+MIT. See [LICENSE](LICENSE). This covers the files in this repository, not external reference collections or artwork supplied by a user.

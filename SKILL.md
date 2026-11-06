@@ -5,7 +5,7 @@ description: Create or refine custom SVG icons and cohesive icon sets, including
 
 # Make Icons
 
-Draw original, editable vector icons with open contours, balanced proportions, restrained rounding, and clear negative space. The default family is **outline, 24-unit grid, 1.5-unit stroke**. Personality comes from the subject's silhouette and curve handling, not forced squat proportions or decorative irregularity.
+Draw reference-faithful, editable vector icons with open contours, balanced proportions, restrained rounding, and clear negative space. The default family is **outline, 24-unit grid, 1.5-unit stroke**. Personality comes from the subject's silhouette and curve handling, not forced squat proportions or decorative irregularity.
 
 ## Establish the request
 
@@ -20,6 +20,12 @@ Explicit user instructions and an established project's approved icon system ove
 - Read [references/anchors.md](references/anchors.md) before using bundled examples. The ten examples demonstrate structural, organic, and intersecting contours. Supplied references and current construction rules take precedence. Inspect their geometry and rendered behavior before adapting them; they are examples, not a mandatory inventory.
 - Read the compact-size and typography sections of the master prompt when working at 16/20 native units or with letters/numerals. Read its export section for framework components, expanded paths, or raster requests.
 - For a reusable prompt request, return the master prompt with **all editable inputs at the beginning**. It must work without this skill, bundled scripts, a specific design application, or private project context.
+
+## Choose fidelity before drawing
+
+Use **reproduce** when the user asks for an exact match, replica, tracing, or faithful reconstruction. Use **adapt** when matching a family with new subjects or changed constraints. Use **invent** when no reference defines the result. Do not impose originality on reproduction. The requested source geometry and topology outrank generic style defaults. Reuse supplied SVG geometry when it is the requested source; do not redraw an exact vector as an approximation.
+
+Before reproduction or substantial refinement, read [references/fidelity-review.md](references/fidelity-review.md). Inspect the actual reference, including crops, before deriving coordinates. Separate observable facts from estimated dimensions. When only a raster exists, reconstruct the visible contour faithfully and describe the result as a reconstruction, not a verified exact source match.
 
 ## Construct the family
 
@@ -54,6 +60,10 @@ Default sensibly when no export format is specified. Offer one concise format/si
 `assets/outline-24/` contains the ten editable construction examples described in [references/anchors.md](references/anchors.md). These match the downloadable samples.
 
 ## Verify and finish
+
+Perform a **fresh visual pass after construction**, using the saved render rather than the path code as evidence. Follow [references/fidelity-review.md](references/fidelity-review.md): first check subject/variant and mechanical relationships, then silhouette and reference differences, then native-size rendering. A plausible SVG is not enough. For reproduction, show equal-scale reference/output pairs and inspect an overlay or difference view when available. Correct critical mismatches before delivery, then rerender affected outputs. If a mismatch remains, identify it rather than claiming completion of an exact match.
+
+For repeated skill changes, use [evals/README.md](evals/README.md) to compare isolated baseline and treatment runs and verify actual skill use. Do not run a benchmark for every ordinary icon request.
 
 Parse new SVGs and check requested inventory, native grids, bounds, consistent weight, and transparent holes. Render at the actual intended sizes when available, inspect light and dark contexts, and compare related states in fixed containers. Correct recognition, crowding, contour, or layout faults before delivery. For components or interactions, run checks appropriate to that target; static artwork does not require an interaction test suite.
 

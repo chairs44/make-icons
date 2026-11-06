@@ -14,7 +14,7 @@
       "file": "svg/24/backpack-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "rendered_review": "inspected_at_16_20_24_32_and_96px",
         "optical_review": "inspected_in_light_and_dark_contexts",
         "application_integration": "not_performed"
       },
@@ -33,7 +33,7 @@
       "file": "svg/24/book-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "rendered_review": "inspected_at_16_20_24_32_and_96px",
         "optical_review": "inspected_in_light_and_dark_contexts",
         "application_integration": "not_performed"
       },
@@ -52,7 +52,7 @@
       "file": "svg/24/camera-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "rendered_review": "inspected_at_16_20_24_32_and_96px",
         "optical_review": "inspected_in_light_and_dark_contexts",
         "application_integration": "not_performed"
       },
@@ -71,11 +71,11 @@
       "file": "svg/24/cassette-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "rendered_review": "inspected_at_16_20_24_32_and_96px",
         "optical_review": "inspected_in_light_and_dark_contexts",
         "application_integration": "not_performed"
       },
-      "limitations": "Scaled 24-unit master, not a compact optical variant. Reel details are least distinct at 16px."
+      "limitations": "Scaled 24-unit master, not a compact optical variant."
     },
     {
       "name": "coffee-cup",
@@ -90,7 +90,7 @@
       "file": "svg/24/coffee-cup-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "rendered_review": "inspected_at_16_20_24_32_and_96px",
         "optical_review": "inspected_in_light_and_dark_contexts",
         "application_integration": "not_performed"
       },
@@ -109,7 +109,7 @@
       "file": "svg/24/headphones-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "rendered_review": "inspected_at_16_20_24_32_and_96px",
         "optical_review": "inspected_in_light_and_dark_contexts",
         "application_integration": "not_performed"
       },
@@ -128,7 +128,7 @@
       "file": "svg/24/home-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "rendered_review": "inspected_at_16_20_24_32_and_96px",
         "optical_review": "inspected_in_light_and_dark_contexts",
         "application_integration": "not_performed"
       },
@@ -147,7 +147,7 @@
       "file": "svg/24/plant-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "rendered_review": "inspected_at_16_20_24_32_and_96px",
         "optical_review": "inspected_in_light_and_dark_contexts",
         "application_integration": "not_performed"
       },
@@ -166,11 +166,12 @@
       "file": "svg/24/scissors-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "rendered_review": "inspected_at_16_20_24_32_and_96px",
         "optical_review": "inspected_in_light_and_dark_contexts",
         "application_integration": "not_performed"
       },
-      "limitations": "Scaled 24-unit master, not a compact optical variant."
+      "limitations": "Scaled 24-unit master, not a compact optical variant.",
+      "construction": "Uniform outline handles with custom filled blade contours."
     },
     {
       "name": "ticket",
@@ -185,7 +186,7 @@
       "file": "svg/24/ticket-outline.svg",
       "checks": {
         "xml_parsed": true,
-        "rendered_review": "inspected_at_16_20_24_32_and_72px",
+        "rendered_review": "inspected_at_16_20_24_32_and_96px",
         "optical_review": "inspected_in_light_and_dark_contexts",
         "application_integration": "not_performed"
       },

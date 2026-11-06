@@ -55,7 +55,7 @@ Use a small number of broad, smooth curves for organic masses. Preserve a clear 
 
 Organic asymmetry should describe growth or orientation. Two leaves can differ in height, angle, and fullness while meeting a shared stem naturally. Give each leaf one clear convex outer sweep and a complementary returning curve; omit veins unless they materially help recognition. Let stems connect at deliberate junctions instead of extending through an enclosed leaf as an accidental extra stroke.
 
-For tools and diagonal objects, preserve the action implied by the silhouette. Use repeated handles or loops with matched dimensions and a coherent pivot. A crossing can use a continuous leading member and a broken rear member; it need not have a decorative pivot dot. Keep long blades or shafts purposeful instead of shortening them until the tool looks toy-like. Different valid variants may use open lines or enclosed blades; choose one construction language for the requested set.
+For tools and diagonal objects, preserve the action implied by the silhouette. Use repeated handles or loops with matched dimensions and a coherent pivot. A crossing can use a continuous leading member and a broken rear member; it need not have a decorative pivot dot. Keep long blades or shafts purposeful instead of shortening them until the tool looks toy-like. Different variants may use open lines or enclosed blades. Reproduce the supplied variant, including shaped tips and the precise visible/hidden intervals. A round-cap diagonal cannot reproduce a chamfered or tapered blade end; use a custom contour there. Trace each member through its pivot region before deciding where to interrupt it.
 
 ## Reference interpretation and transfer
 
@@ -65,10 +65,12 @@ Transfer the decisions, not the subject list: economical structure applies to co
 
 ## Review against evidence
 
-Use any supplied reference at the same displayed size and color. Compare silhouette proportions, line density, curve transitions, junctions, and negative space separately. Extract construction principles; do not trace third-party paths or redistribute their artwork without permission. A reference with expanded fills may still be line art.
+Use any supplied reference at the same displayed size and color. Compare silhouette proportions, line density, curve transitions, junctions, and negative space separately. Follow the requested fidelity mode: reuse supplied vector geometry for exact reproduction, reconstruct visible contours from raster references, or transfer construction principles to new subjects. Do not force originality when the user requests a match. Keep source provenance and distribution terms distinct from drawing technique. A reference with expanded fills may still be line art.
 
 For a set, inspect one upright, one circular/diagonal, and one organic subject before extending the vocabulary. This is an internal drawing pass, not an extra user approval requirement. If a supplied reference and a bundled example disagree, follow the requested reference and explain any meaningful construction change.
 
 Inspect at actual size before enlarged views. At 16/20/24/32px, look for disappearing openings, fuzzy clusters, excessive apparent size, and weak recognition. At 8×, inspect tangents, joins, overshooting caps, and accidental double edges. Use both polarities. Compare a structural container, an organic contour, and a crossing/modifier when those categories occur in the requested set. Reject inflated corner transitions, redundant seams, crowded badges, ambiguous over/under relationships, and loss of the subject’s characteristic proportions. Fix identifiable defects in one consolidated pass, then confirm the affected views. Do not call a drawing approved because XML validation passed.
 
 Keep generated studies separate from approved anchors. Acceptance of a general direction does not approve every example. Record structural checks, rendered review, and user approval as separate facts. Instructions improve repeatability; no prompt guarantees expert-level drawing or an exact style match without visual review.
+
+Use [fidelity-review.md](fidelity-review.md) for reference measurement and the independent second visual pass.

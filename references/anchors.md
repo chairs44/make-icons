@@ -1,17 +1,17 @@
 # Drawing references
 
-`../assets/outline-24/` contains ten original editable SVG examples on a 24-unit grid with a 1.5-unit stroke. The same files are supplied in the sample pack. Use them with [construction.md](construction.md), not as a substitute for the requested subject or visual reference.
+`../assets/outline-24/` contains ten editable SVG examples on a 24-unit grid with a 1.5-unit stroke. The same files are supplied in the sample pack. Use them with [construction.md](construction.md), not as a substitute for the requested subject or visual reference.
 
 | Construction decision | Examples |
 | --- | --- |
 | Continuous body, short corner transitions, inset opening | `home-outline.svg` |
 | Wide container and a centered identifying detail | `camera-outline.svg` |
 | Curved arch with connected parts and shared-edge ownership | `headphones-outline.svg` |
-| Tapered organic contours and intentional asymmetry | `plant-outline.svg` |
+| Tapered sprout contours, stem attachments, and intentional asymmetry | `plant-outline.svg` |
 | Concave cutouts and separated internal marks | `ticket-outline.svg` |
 | Narrow upright mass and a single page-block boundary | `book-outline.svg` |
 | Curved body and attached handle | `coffee-cup-outline.svg` |
-| Matched loops and an interrupted rear member | `scissors-outline.svg` |
+| Matched loops, custom blade tips, and a localized rear interruption | `scissors-outline.svg` |
 | Curved shoulders and a restrained inset detail | `backpack-outline.svg` |
 | Nested contours and compact identifying details | `cassette-outline.svg` |
 
